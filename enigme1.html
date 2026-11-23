@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Énigme 1 🌷 - Pour Shiraz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="riddle" data-riddle-id="1">
+  <div id="hearts-layer" class="hearts-layer" aria-hidden="true"></div>
+
+  <!-- Réaction photo en bas à droite (Oui1-3.png / Non1-3.png) -->
+  <div id="reaction-pop" class="reaction-pop" aria-hidden="true">
+    <img id="reaction-img" src="" alt="" />
+  </div>
+
+  <main class="container">
+    <section id="quiz-screen" class="card card-enter" aria-label="Énigme 1 - Quiz">
+      <div class="top-bar" style="justify-content: space-between; align-items: center;">
+        <a href="menu.html" class="back-menu-btn">← Retour aux énigmes</a>
+        <span id="quiz-step-badge" class="quiz-step-badge">Question 1 / 3</span>
+      </div>
+
+      <!-- Photo de la question (kiss.jpg puis Shiscream.jpg puis Oui2.jpg) -->
+      <div id="quiz-photo-frame" class="quiz-photo-frame">
+        <img id="quiz-photo" src="kiss.jpg" alt="Souvenir" class="quiz-photo" />
+      </div>
+
+      <h2 id="quiz-question" class="quiz-question-title">
+        C'était quand ce moment ? 💋
+      </h2>
+
+      <!-- Liste des choix de réponse -->
+      <div id="quiz-options" class="quiz-options"></div>
+
+      <p id="quiz-feedback" class="feedback-msg" role="status"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

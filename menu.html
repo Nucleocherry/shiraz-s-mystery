@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les 3 Énigmes de Shiraz 🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="hub">
+  <div id="hearts-layer" class="hearts-layer" aria-hidden="true"></div>
+
+  <main class="container">
+    <section id="hub-screen" class="card card-enter" aria-label="Menu des énigmes">
+      <div class="hub-header">
+        <div id="progress-pill" class="progress-pill">
+          <span>✨</span>
+          <span id="progress-text">0 / 3 énigmes résolues</span>
+        </div>
+        <h2>Les 3 Énigmes de Shiraz 🌸</h2>
+        <p class="subtitle" style="margin-bottom: 0;">
+          Résous les trois énigmes pour débloquer la surprise finale !
+        </p>
+      </div>
+
+      <!-- Liens vers les 3 pages HTML d'énigmes -->
+      <div class="riddle-list">
+        <a href="enigme1.html" class="riddle-btn" id="riddle-btn-1">
+          <div class="riddle-btn-left">
+            <div class="riddle-icon">🌷</div>
+            <div>
+              <span class="riddle-name">Énigme 1</span>
+              <span class="riddle-desc" id="riddle-desc-1">Quiz sur nous 💕</span>
+            </div>
+          </div>
+          <span class="status-badge" id="riddle-badge-1">🔒 À résoudre</span>
+        </a>
+
+        <a href="enigme2.html" class="riddle-btn" id="riddle-btn-2">
+          <div class="riddle-btn-left">
+            <div class="riddle-icon">🍓</div>
+            <div>
+              <span class="riddle-name">Énigme 2</span>
+              <span class="riddle-desc" id="riddle-desc-2">Chasse aux papiers 🏠</span>
+            </div>
+          </div>
+          <span class="status-badge" id="riddle-badge-2">🔒 À résoudre</span>
+        </a>
+
+        <a href="enigme3.html" class="riddle-btn" id="riddle-btn-3">
+          <div class="riddle-btn-left">
+            <div class="riddle-icon">🧸</div>
+            <div>
+              <span class="riddle-name">Énigme 3</span>
+              <span class="riddle-desc" id="riddle-desc-3">Code à 6 chiffres</span>
+            </div>
+          </div>
+          <span class="status-badge" id="riddle-badge-3">🔒 À résoudre</span>
+        </a>
+      </div>
+
+      <!-- 4ème bouton qui ouvre page_finale.html uniquement quand les 3 sont réussies -->
+      <div class="final-gate-wrapper">
+        <button type="button" id="final-btn" class="final-btn locked" aria-disabled="true">
+          <span id="final-btn-title">🔒 Surprise finale verrouillée</span>
+          <span id="final-btn-sub" class="final-btn-sub">
+            Réussis les 3 énigmes pour déverrouiller (0/3)
+          </span>
+        </button>
+      </div>
+
+      <div class="hub-footer-actions">
+        <a href="index.html" class="reset-link">Accueil</a>
+        <button type="button" id="reset-progress-btn" class="reset-link">
+          Réinitialiser les tests
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

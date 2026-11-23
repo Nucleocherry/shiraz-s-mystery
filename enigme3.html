@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Énigme 3 🧸 - Pour Shiraz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="riddle" data-riddle-id="3">
+  <div id="hearts-layer" class="hearts-layer" aria-hidden="true"></div>
+
+  <div id="reaction-pop" class="reaction-pop" aria-hidden="true">
+    <img id="reaction-img" src="" alt="" />
+  </div>
+
+  <main class="container">
+    <section id="lock-screen" class="card card-enter" aria-label="Énigme 3">
+      <div class="top-bar">
+        <a href="menu.html" class="back-menu-btn">← Retour aux énigmes</a>
+      </div>
+
+      <div class="lock-badge" aria-hidden="true">
+        <span style="font-size: 2rem;">🧸</span>
+      </div>
+
+      <h2>Énigme 3 🧸</h2>
+      <p class="subtitle">
+        Entre le code secret de la troisième énigme :
+      </p>
+
+      <div class="hint-pill">
+        <span>Indice test Énigme 3 : 303030 ✨</span>
+      </div>
+
+      <div id="code-inputs" class="code-inputs">
+        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 1" />
+        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 2" />
+        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 3" />
+        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 4" />
+        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 5" />
+        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 6" />
+      </div>
+
+      <p id="feedback-msg" class="feedback-msg" role="status"></p>
+
+      <div class="numpad" aria-label="Pavé numérique">
+        <button type="button" class="num-btn" data-num="1">1</button>
+        <button type="button" class="num-btn" data-num="2">2</button>
+        <button type="button" class="num-btn" data-num="3">3</button>
+        <button type="button" class="num-btn" data-num="4">4</button>
+        <button type="button" class="num-btn" data-num="5">5</button>
+        <button type="button" class="num-btn" data-num="6">6</button>
+        <button type="button" class="num-btn" data-num="7">7</button>
+        <button type="button" class="num-btn" data-num="8">8</button>
+        <button type="button" class="num-btn" data-num="9">9</button>
+        <button type="button" class="num-btn action-btn" id="clear-btn">Vider</button>
+        <button type="button" class="num-btn" data-num="0">0</button>
+        <button type="button" class="num-btn action-btn" id="back-btn">⌫</button>
+      </div>
+
+      <button type="button" id="unlock-btn" class="unlock-btn">
+        Valider l'énigme 3 💖
+      </button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
