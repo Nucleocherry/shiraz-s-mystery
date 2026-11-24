@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Énigme 3 🧸 - Pour Shiraz</title>
+  <title>Énigme 3 💌 - Pour Shiraz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet" />
@@ -23,46 +23,56 @@
       </div>
 
       <div class="lock-badge" aria-hidden="true">
-        <span style="font-size: 2rem;">🧸</span>
+        <span style="font-size: 2rem;">💌</span>
       </div>
 
-      <h2>Énigme 3 🧸</h2>
+      <h2>Énigme 3 : Les 3 Enveloppes 💌</h2>
       <p class="subtitle">
-        Entre le code secret de la troisième énigme :
+        Ouvre les trois enveloppes et observe bien les <strong>mots en surbrillance</strong> pour retrouver le nom caché !
       </p>
 
-      <div class="hint-pill">
-        <span>Indice test Énigme 3 : 303030 ✨</span>
+      <!-- 3 Enveloppes cliquables -->
+      <div class="envelopes-grid" aria-label="Les 3 enveloppes">
+        <button type="button" class="envelope-btn active" data-env="0" aria-pressed="true">
+          <span class="env-emoji">📩</span>
+          <span class="env-label">Lettre 1</span>
+        </button>
+        <button type="button" class="envelope-btn" data-env="1" aria-pressed="false">
+          <span class="env-emoji">💌</span>
+          <span class="env-label">Lettre 2</span>
+        </button>
+        <button type="button" class="envelope-btn" data-env="2" aria-pressed="false">
+          <span class="env-emoji">📨</span>
+          <span class="env-label">Lettre 3</span>
+        </button>
       </div>
 
-      <div id="code-inputs" class="code-inputs">
-        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 1" />
-        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 2" />
-        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 3" />
-        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 4" />
-        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 5" />
-        <input type="text" inputmode="numeric" maxlength="1" class="digit-box" aria-label="Chiffre 6" />
+      <!-- Zone d'affichage de la lettre ouverte -->
+      <div id="letter-viewer" class="letter-paper">
+        <div class="letter-header-row">
+          <span id="letter-title" class="letter-tag">Enveloppe n°1</span>
+          <span class="letter-stamp">💖</span>
+        </div>
+        <p id="letter-body" class="letter-body"></p>
+      </div>
+
+      <!-- Champ texte pour saisir la réponse -->
+      <div class="text-answer-group">
+        <input
+          type="text"
+          id="riddle3-input"
+          class="text-answer-input"
+          placeholder="Écris ta réponse ici..."
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+        />
       </div>
 
       <p id="feedback-msg" class="feedback-msg" role="status"></p>
 
-      <div class="numpad" aria-label="Pavé numérique">
-        <button type="button" class="num-btn" data-num="1">1</button>
-        <button type="button" class="num-btn" data-num="2">2</button>
-        <button type="button" class="num-btn" data-num="3">3</button>
-        <button type="button" class="num-btn" data-num="4">4</button>
-        <button type="button" class="num-btn" data-num="5">5</button>
-        <button type="button" class="num-btn" data-num="6">6</button>
-        <button type="button" class="num-btn" data-num="7">7</button>
-        <button type="button" class="num-btn" data-num="8">8</button>
-        <button type="button" class="num-btn" data-num="9">9</button>
-        <button type="button" class="num-btn action-btn" id="clear-btn">Vider</button>
-        <button type="button" class="num-btn" data-num="0">0</button>
-        <button type="button" class="num-btn action-btn" id="back-btn">⌫</button>
-      </div>
-
       <button type="button" id="unlock-btn" class="unlock-btn">
-        Valider l'énigme 3 💖
+        Valider l'énigme 3
       </button>
     </section>
   </main>
